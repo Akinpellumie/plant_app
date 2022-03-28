@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:plant_app/helpers/constants.dart';
+import 'package:plant_app/screens/favorite/favorite_screen.dart';
+import 'package:plant_app/screens/home/home_screen.dart';
 
 class CustomBottomNavBar extends StatelessWidget {
   const CustomBottomNavBar({
@@ -11,10 +13,11 @@ class CustomBottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(
-          left: kDefaultPadding * 2,
-          right: kDefaultPadding * 2,
-          bottom: kDefaultPadding),
-      height: 80,
+        left: kDefaultPadding * 2,
+        right: kDefaultPadding * 2,
+        bottom: kDefaultPadding / 3,
+      ),
+      height: 60,
       decoration: BoxDecoration(
         color: Colors.white,
         boxShadow: [
@@ -29,11 +32,27 @@ class CustomBottomNavBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           IconButton(
-            onPressed: () {},
+            onPressed: () 
+            {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const HomeScreen(),
+                ),
+              );
+            },
             icon: SvgPicture.asset("assets/icons/flower.svg"),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: ()
+            {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const FavoriteScreen(),
+                ),
+              );
+            },
             icon: SvgPicture.asset("assets/icons/heart-icon.svg"),
           ),
           IconButton(
