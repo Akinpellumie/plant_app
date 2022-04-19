@@ -7,6 +7,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+   static const String title = 'Navigation Drawer';
   const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const HomeScreen(),
+      home: HomeScreen(),
     );
   }
 }

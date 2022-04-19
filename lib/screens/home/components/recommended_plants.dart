@@ -22,7 +22,7 @@ class RecommendedPlants extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => DetailsScreen(),
+                  builder: (context) => const DetailsScreen(),
                 ),
               );
             },
@@ -36,7 +36,7 @@ class RecommendedPlants extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => DetailsScreen(),
+                  builder: (context) => const DetailsScreen(),
                 ),
               );
             },
@@ -50,7 +50,7 @@ class RecommendedPlants extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => DetailsScreen(),
+                  builder: (context) => const DetailsScreen(),
                 ),
               );
             },
@@ -64,7 +64,7 @@ class RecommendedPlants extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => DetailsScreen(),
+                  builder: (context) => const DetailsScreen(),
                 ),
               );
             },

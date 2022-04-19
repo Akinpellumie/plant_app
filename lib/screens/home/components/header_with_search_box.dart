@@ -13,7 +13,7 @@ class HeaderWithSearchBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: kDefaultPadding * 2.5),
+      margin: const EdgeInsets.only(bottom: kDefaultPadding * 2.5),
       //it will cover 20% of the total screen
       height: size.height * 0.2,
       child: Stack(
